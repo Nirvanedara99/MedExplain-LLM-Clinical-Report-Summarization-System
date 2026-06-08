@@ -40,7 +40,12 @@ except Exception:
     MedicalChatbot = None
 
 
-st.set_page_config(page_title="MedExplain", layout="wide", page_icon="🩺")
+st.set_page_config(
+    page_title="MedExplain",
+    page_icon="🩺",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 apply_custom_css()
 
 

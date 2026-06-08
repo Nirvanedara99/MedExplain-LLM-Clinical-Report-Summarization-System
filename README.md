@@ -1,43 +1,54 @@
 # 🩺 MedExplain
 
-MedExplain is an AI-powered medical report simplification system developed to help patients better understand their medical reports.
+MedExplain is a medical report simplification system that helps patients understand their medical reports in plain language.
 
-Many medical reports contain complex terminology, lab values, and clinical findings that can be difficult for non-medical users to interpret. The goal of this project is to extract important information from a report and present it in a simpler and more understandable format.
+Medical reports often contain technical terms, laboratory values, and clinical findings that can be difficult for non-medical users to understand. The aim of this project is to extract important information from a report and present it in a simpler and more understandable way.
 
-The system can identify important medical values, detect abnormal findings, retrieve relevant medical knowledge, generate patient-friendly explanations, and answer questions about the uploaded report.
+Users can upload a medical report, review important findings, explore possible health concerns, retrieve relevant medical knowledge, and ask questions about the report through a conversational assistant.
 
 This project was developed as part of my interest in Artificial Intelligence, Natural Language Processing, and healthcare applications.
 
 ---
 
-## Features
+# Features
 
-### Medical Report Analysis
+### 📋 Medical Report Analysis
 
 * Extracts medical values from reports
-* Detects abnormal findings
-* Identifies symptoms and clinical observations
-* Generates simplified explanations for patients
+* Identifies important findings
+* Detects abnormal values
+* Generates patient-friendly explanations
 
-### Semantic Medical NLP
+### 🧠 Semantic Medical NLP
 
 * Uses semantic analysis instead of relying only on keywords
-* Detects medical findings from report text
-* Identifies possible health concerns and conditions
+* Detects symptoms and clinical findings from report text
+* Identifies possible health concerns
 
-### Retrieval-Augmented Generation (RAG)
+### 🔎 Medical Knowledge Retrieval
 
-* Uses FAISS vector retrieval
-* Retrieves relevant medical knowledge based on report findings
-* Provides contextual explanations to support report understanding
+* Retrieves relevant medical information using FAISS
+* Connects report findings with supporting medical knowledge
+* Generates contextual explanations
 
-### Conversational Assistant
+### 💬 Conversational Assistant
 
-* Allows users to ask questions about their uploaded report
-* Provides report-aware answers
-* Supports follow-up questions using conversation history
+* Ask questions about uploaded reports
+* Receive report-specific answers
+* Supports follow-up questions
+* Uses report context to provide more relevant responses
 
-### Document Support
+### 📄 PDF Summary Export
+
+Generate a downloadable report containing:
+
+* Medical values
+* Important findings
+* Health concerns
+* Simplified explanations
+* Recommendations
+
+### 📂 Multi-Format Support
 
 Supported formats:
 
@@ -45,30 +56,35 @@ Supported formats:
 * DOCX
 * TXT
 
-### PDF Summary Generation
+### 🔍 OCR Support
 
-Generates a downloadable summary containing:
+Scanned medical reports can be processed using OCR.
 
-* Simplified explanation
-* Medical values
-* Important findings
-* Possible conditions
-* Recommendations
-
-### OCR Support (Experimental)
-
-MedExplain includes OCR support for scanned medical reports.
-
-OCR works reasonably well on clear scanned documents but may struggle with:
-
-* Handwritten notes
-* ECG images
-* Retinal scans
-* Poor-quality scans
+OCR works best with clear printed reports and may be less reliable for handwritten notes, ECG images, or image-heavy medical documents.
 
 ---
 
-## Technology Stack
+# Screenshots
+
+### Homepage
+
+![Homepage](assets/homepage.png)
+
+### Important Findings
+
+![Important Findings](assets/findings.png)
+
+### Conversational Assistant
+
+![Chatbot](assets/chatbot.png)
+
+### Health Concerns
+
+![Health Concerns](assets/health_concerns.png)
+
+---
+
+# Technology Stack
 
 ### Frontend
 
@@ -94,7 +110,7 @@ OCR works reasonably well on clear scanned documents but may struggle with:
 
 ---
 
-## How the System Works
+# How It Works
 
 Medical Report
 
@@ -108,15 +124,15 @@ Medical Value Extraction
 
 ↓
 
-Severity Detection
+Severity Analysis
 
 ↓
 
-Semantic Medical Analysis
+Semantic Medical Processing
 
 ↓
 
-Knowledge Retrieval (FAISS)
+Medical Knowledge Retrieval
 
 ↓
 
@@ -132,17 +148,17 @@ PDF Summary Generation
 
 ---
 
-## Why I Built This
+# Why I Built This
 
-During the development of this project, I noticed that many people receive medical reports but often struggle to understand what the findings actually mean.
+While working with medical reports, I noticed that many people struggle to understand what their reports actually mean.
 
-Most existing solutions either require medical knowledge or rely on cloud-based services. I wanted to build a system that could run locally, preserve privacy, and explain reports in language that patients can understand.
+Most reports are written for healthcare professionals and contain terminology that can be confusing for patients. I wanted to build a system that could make medical information easier to understand while still preserving the important context behind the findings.
 
-The project also gave me an opportunity to explore Natural Language Processing, semantic search, retrieval systems, and conversational AI in a practical healthcare application.
+This project also allowed me to explore practical applications of Natural Language Processing, semantic search, retrieval systems, and conversational AI in the healthcare domain.
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository:
 
@@ -165,7 +181,7 @@ streamlit run app.py
 
 ---
 
-## Model Setup
+# Model Setup
 
 Language model files are not included in this repository.
 
@@ -183,11 +199,11 @@ models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
 
 ---
 
-## Current Version
+# Current Version
 
-### MedExplain v1.5
+**MedExplain v1.5**
 
-Implemented features:
+Implemented modules:
 
 * Medical report understanding
 * Semantic medical NLP
@@ -199,21 +215,20 @@ Implemented features:
 
 ---
 
-## Future Work
+# Future Improvements
 
-Possible future improvements include:
+Some possible future enhancements include:
 
 * ECG interpretation
 * Retinal scan analysis
 * Prescription understanding
-* Multimodal medical AI
-* Specialist recommendation system
-* Agent-based healthcare workflows
+* Multimodal healthcare AI
+* Specialist recommendation systems
 
 ---
 
-## Disclaimer
+# Disclaimer
 
-This project is intended for educational and research purposes only.
+This project was developed for educational and research purposes.
 
 The information generated by MedExplain should not be considered medical advice, diagnosis, or treatment. Users should always consult a qualified healthcare professional regarding medical concerns.

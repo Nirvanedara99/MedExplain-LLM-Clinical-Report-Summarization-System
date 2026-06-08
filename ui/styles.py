@@ -103,6 +103,18 @@ def apply_custom_css():
             background: linear-gradient(180deg, #0A1221 0%, #0D1626 100%) !important;
             border-right: 1px solid var(--glass-border) !important;
             box-shadow: 4px 0 32px rgba(0, 0, 0, 0.40) !important;
+
+            min-width: 320px !important;
+            width: 320px !important;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            z-index: 999999 !important;
+        }
+
+        section[data-testid="stSidebar"][aria-expanded="false"] {
+            transform: translateX(0px) !important;
+            margin-left: 0px !important;
         }
 
         section[data-testid="stSidebar"] > div {
