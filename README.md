@@ -8,9 +8,11 @@ Users can upload a medical report, review important findings, explore possible h
 
 This project was developed as part of my interest in Artificial Intelligence, Natural Language Processing, and healthcare applications.
 
----
+## 🚀 Live Demo
 
-# Features
+https://medexplain-healthcare-ai.streamlit.app/
+
+## Features
 
 ### 📋 Medical Report Analysis
 
@@ -62,9 +64,7 @@ Scanned medical reports can be processed using OCR.
 
 OCR works best with clear printed reports and may be less reliable for handwritten notes, ECG images, or image-heavy medical documents.
 
----
-
-# Screenshots
+## Screenshots
 
 ### Homepage
 
@@ -82,9 +82,7 @@ OCR works best with clear printed reports and may be less reliable for handwritt
 
 ![Health Concerns](assets/health_concerns.png)
 
----
-
-# Technology Stack
+## Technology Stack
 
 ### Frontend
 
@@ -108,9 +106,7 @@ OCR works best with clear printed reports and may be less reliable for handwritt
 * pytesseract
 * python-docx
 
----
-
-# How It Works
+## How It Works
 
 Medical Report
 
@@ -146,9 +142,7 @@ Conversational Question Answering
 
 PDF Summary Generation
 
----
-
-# Why I Built This
+## Why I Built This
 
 While working with medical reports, I noticed that many people struggle to understand what their reports actually mean.
 
@@ -156,9 +150,7 @@ Most reports are written for healthcare professionals and contain terminology th
 
 This project also allowed me to explore practical applications of Natural Language Processing, semantic search, retrieval systems, and conversational AI in the healthcare domain.
 
----
-
-# Installation
+## Installation
 
 Clone the repository:
 
@@ -179,9 +171,7 @@ Run the application:
 streamlit run app.py
 ```
 
----
-
-# Model Setup
+## Model Setup
 
 Language model files are not included in this repository.
 
@@ -197,9 +187,7 @@ Example:
 models/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
 ```
 
----
-
-# Current Version
+## Current Version
 
 **MedExplain v1.5**
 
@@ -213,9 +201,7 @@ Implemented modules:
 * Multi-format document support
 * OCR support for scanned reports
 
----
-
-# Future Improvements
+## Future Improvements
 
 Some possible future enhancements include:
 
@@ -225,9 +211,7 @@ Some possible future enhancements include:
 * Multimodal healthcare AI
 * Specialist recommendation systems
 
----
-
-# Disclaimer
+## Disclaimer
 
 This project was developed for educational and research purposes.
 
