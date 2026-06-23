@@ -155,7 +155,7 @@ This project also allowed me to explore practical applications of Natural Langua
 Clone the repository:
 
 ```bash
-git clone https://github.com/rpraneeth63/MedExplain-Healthcare-AI.git
+git clone [https://github.com/Nirvanedara99/MedExplain-LLM-Clinical-Report-Summarization-System.git]
 cd MedExplain-Healthcare-AI
 ```
 
