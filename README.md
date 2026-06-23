@@ -8,9 +8,6 @@ Users can upload a medical report, review important findings, explore possible h
 
 This project was developed as part of my interest in Artificial Intelligence, Natural Language Processing, and healthcare applications.
 
-## 🚀 Live Demo
-
-https://medexplain-healthcare-ai.streamlit.app/
 
 ## Features
 
